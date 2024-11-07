@@ -53,7 +53,7 @@
     "genX": "url('/public/images/genx.jpg')",
     "millennials": "url('/public/images/millennials.jpg')",
     "genZ": "url('/public/images/genz.jpg')" ,
-    "GenAlpha": "url('/public/images/genz.jpg')"
+    "GenAlpha": "url('/public/images/genalpha.jpg')"
 };
 
 
@@ -100,6 +100,11 @@
                 generation = "GenAlpha";
                 generationText.textContent ="Gen Alpha";
             }
+            document.body.style.backgroundImage = backgroundImages[generation];
+document.body.style.backgroundSize = "cover";  // Ensure the image covers the whole screen
+document.body.style.backgroundPosition = "center";  // Center the image on the screen
+document.body.style.backgroundRepeat = "no-repeat";  // Prevent the image from repeating
+
 
             // Log the selected generation for debugging
             console.log('Generation:', generation);
